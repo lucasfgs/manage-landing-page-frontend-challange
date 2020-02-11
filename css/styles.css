@@ -7,6 +7,10 @@
   font-family: "Be Vietnam", sans-serif;
   text-decoration: none;
   list-style: none;
+  outline: none;
+}
+body {
+  overflow-x: hidden;
 }
 
 .button {
@@ -152,5 +156,49 @@ header {
   line-height: 25px;
   font-weight: 500;
   width: 340px;
+  margin-top: 15px;
+}
+
+.customers {
+  padding: 40px 0;
+}
+
+.customers__title {
+  text-align: center;
+  color: hsl(228, 39%, 23%);
+  font-size: 38px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+.customers__card {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  min-height: 200px;
+  background: hsl(0, 0%, 98%);
+}
+
+.card__avatar {
+  width: 64px;
+  height: 64px;
+  align-self: center;
+  transform: translateY(-50%);
+}
+
+.card__title {
+  text-align: center;
+  color: hsl(228, 39%, 23%);
+  font-size: 16px;
+}
+
+.card__description {
+  align-self: center;
+  color: hsl(227, 12%, 61%);
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
   margin-top: 15px;
 }

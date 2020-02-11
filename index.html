@@ -24,7 +24,7 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -108,57 +108,59 @@
         <h1 class="customers__title">What they’ve said</h1>
 
         <div class="customers__cards-container">
-          <div class="card">
-            <img
-              src="./images/avatar-anisha.png"
-              alt="Anisha Li"
-              class="card__avatar"
-            />
-            <h1 class="card__title">Anisha Li</h1>
-            <p class="card__description">
-              “Manage has supercharged our team’s workflow. The ability to
-              maintain visibility on larger milestones at all times keeps
-              everyone motivated.”
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="./images/avatar-ali.png"
-              alt="Ali Bravo"
-              class="card__avatar"
-            />
-            <h1 class="card__title">Ali Bravo</h1>
-            <p class="card__description">
-              “We have been able to cancel so many other subscriptions since
-              using Manage. There is no more cross-channel confusion and
-              everyone is much more focused.”
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="./images/avatar-richard.png"
-              alt="Richard Watts"
-              class="card__avatar"
-            />
-            <h1 class="card__title">Richard Watts</h1>
-            <p class="card__description">
-              “Manage allows us to provide structure and process. It keeps us
-              organized and focused. I can’t stop recommending them to everyone
-              I talk to!”
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="./images/avatar-shanai.png"
-              alt="Shanai Gough"
-              class="card__avatar"
-            />
-            <h1 class="card__title">Shanai Gough</h1>
-            <p class="card__description">
-              “Their software allows us to track, manage and collaborate on our
-              projects from anywhere. It keeps the whole team in-sync without
-              being intrusive.”
-            </p>
+          <div class="swiper-wrapper">
+            <div class="customers__card swiper-slide">
+              <img
+                src="./images/avatar-anisha.png"
+                alt="Anisha Li"
+                class="card__avatar"
+              />
+              <h1 class="card__title">Anisha Li</h1>
+              <p class="card__description">
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+            <div class="customers__card swiper-slide">
+              <img
+                src="./images/avatar-ali.png"
+                alt="Ali Bravo"
+                class="card__avatar"
+              />
+              <h1 class="card__title">Ali Bravo</h1>
+              <p class="card__description">
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
+            </div>
+            <div class="customers__card swiper-slide">
+              <img
+                src="./images/avatar-richard.png"
+                alt="Richard Watts"
+                class="card__avatar"
+              />
+              <h1 class="card__title">Richard Watts</h1>
+              <p class="card__description">
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
+            <div class="customers__card swiper-slide">
+              <img
+                src="./images/avatar-shanai.png"
+                alt="Shanai Gough"
+                class="card__avatar"
+              />
+              <h1 class="card__title">Shanai Gough</h1>
+              <p class="card__description">
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </p>
+            </div>
           </div>
         </div>
 
@@ -203,7 +205,8 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </div>
     </footer>
-  </body>
 
-  <img src="./images//bg-simplify-section-desktop.svg" alt="" />
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
