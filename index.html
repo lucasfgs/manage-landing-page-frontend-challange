@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="../images/favicon-32x32.png"
     />
 
     <title>Frontend Mentor | Manage landing page</title>
@@ -24,59 +24,85 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
+      <img src="./images/logo.svg" alt="Logo" class="header__logo" />
       <ul class="header__menu">
-        <li><a href="" class="header__menu-item">Pricing</a></li>
-        <li><a href="" class="header__menu-item">Product</a></li>
-        <li><a href="" class="header__menu-item">About Us</a></li>
-        <li><a href="" class="header__menu-item">Careers</a></li>
-        <li><a href="" class="header__menu-item">Community</a></li>
+        <li class="header__menu-item"><a href="">Pricing</a></li>
+        <li class="header__menu-item"><a href="">Product</a></li>
+        <li class="header__menu-item"><a href="">About Us</a></li>
+        <li class="header__menu-item"><a href="">Careers</a></li>
+        <li class="header__menu-item"><a href="">Community</a></li>
       </ul>
 
-      <a href="" class="header__button button">Get Started </a>
+      <a href="" class="button header__button ">Get Started </a>
     </header>
     <main>
       <section class="intro">
-        <h1 class="intro__title">
-          Bring everyone together to build better products.
-        </h1>
-        <h2 class="intro__subtitle">
-          Manage makes it simple for software teams to plan day-to-day tasks
-          while keeping the larger team goals in view.
-        </h2>
-        <a href="" class="intro__button button">Get Started</a>
+        <div class="intro__left">
+          <h1 class="intro__title">
+            Bring everyone together to build better products.
+          </h1>
+          <h2 class="intro__subtitle">
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </h2>
+          <a href="" class="intro__button button">Get Started</a>
+        </div>
+        <div class="intro__right">
+          <img src="./images/illustration-intro.svg" alt="" />
+        </div>
       </section>
       <section class="product">
-        <h1 class="product__title">
-          What’s different about Manage?
-        </h1>
-        <h2 class="produtct__subtitle">
-          Manage provides all the functionality your team needs, without the
-          complexity. Our software is tailor-made for modern digital product
-          teams.
-        </h2>
-
-        <p class="product__topic">
-          <span class="topic__number">01</span>
-          Track company-wide progress See how your day-to-day tasks fit into the
-          wider vision. Go from tracking progress at the milestone level all the
-          way done to the smallest of details. Never lose sight of the bigger
-          picture again.
-        </p>
-        <p class="product__topic">
-          <span class="topic__number">02</span>
-          Advanced built-in reports Set internal delivery estimates and track
-          progress toward company goals. Our customisable dashboard helps you
-          build out the reports you need to keep key stakeholders informed.
-        </p>
-        <p class="product__topic">
-          <span class="topic__number">03</span>
-          Everything you need in one place Stop jumping from one service to
-          another to communicate, store files, track tasks and share documents.
-          Manage offers an all-in-one team productivity solution.
-        </p>
+        <div class="product__left">
+          <h1 class="product__title">
+            What’s different about Manage?
+          </h1>
+          <h2 class="product__subtitle">
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </h2>
+        </div>
+        <div class="product__right">
+          <div class="product__topic">
+            <div class="topic__number">01</div>
+            <div class="topic__content">
+              <h1 class="topic__title">Track company-wide progress</h1>
+              <p class="topic__description">
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way done to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </div>
+          </div>
+          <div class="product__topic">
+            <div class="topic__number">02</div>
+            <div class="topic__content">
+              <h1 class="topic__title">Advanced built-in reports</h1>
+              <p class="topic__description">
+                Set internal delivery estimates and track progress toward
+                company goals. Our customisable dashboard helps you build out
+                the reports you need to keep key stakeholders informed.
+              </p>
+            </div>
+          </div>
+          <div class="product__topic">
+            <div class="topic__number">03</div>
+            <div class="topic__content">
+              <h1 class="topic__title">Everything you need in one place</h1>
+              <p class="topic__description">
+                Stop jumping from one service to another to communicate, store
+                files, track tasks and share documents. Manage offers an
+                all-in-one team productivity solution.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="customers">
         <h1 class="customers__title">What they’ve said</h1>
@@ -84,7 +110,7 @@
         <div class="customers__cards-container">
           <div class="card">
             <img
-              src="/images/avatar-anisha.png"
+              src="./images/avatar-anisha.png"
               alt="Anisha Li"
               class="card__avatar"
             />
@@ -97,7 +123,7 @@
           </div>
           <div class="card">
             <img
-              src="/images/avatar-ali.png"
+              src="./images/avatar-ali.png"
               alt="Ali Bravo"
               class="card__avatar"
             />
@@ -110,7 +136,7 @@
           </div>
           <div class="card">
             <img
-              src="/images/avatar-richard.png"
+              src="./images/avatar-richard.png"
               alt="Richard Watts"
               class="card__avatar"
             />
@@ -123,7 +149,7 @@
           </div>
           <div class="card">
             <img
-              src="/images/avatar-shanai.png"
+              src="./images/avatar-shanai.png"
               alt="Shanai Gough"
               class="card__avatar"
             />
@@ -147,7 +173,7 @@
       </div>
       <div class="bottom-footer">
         <div class="bottom-footer__promotion">
-          <img src="" alt="" class="promotion__logo" />
+          <img src="./images//logo.svg" alt="Logo" class="promotion__logo" />
           <div class="promotion__icons"></div>
         </div>
         <ul class="bottom-footer__menu">
@@ -178,4 +204,6 @@
       </div>
     </footer>
   </body>
+
+  <img src="./images//bg-simplify-section-desktop.svg" alt="" />
 </html>
